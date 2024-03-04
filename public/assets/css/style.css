@@ -1,4 +1,4 @@
-.clicker {
+.clicker-start {
     --border-width: 3px;
 
     position: relative;
@@ -46,13 +46,12 @@
     }
 }
 
-#start-button {
+.time-button {
 
     --border-width: 3px;
     position: relative;
     font-family: Lato, sans-serif;
     font-size: 1.5rem;
-    text-transform: uppercase;
     color: white;
     background: #222;
     border-radius: var(--border-width);
@@ -89,6 +88,31 @@
     }
 
 }
+
+.active {
+
+    transform: scale(0.9);
+    transition: transform 0.1s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(
+            60deg,
+            hsl(224, 85%, 66%),
+            hsl(269, 85%, 66%),
+            hsl(314, 85%, 66%),
+            hsl(359, 85%, 66%),
+            hsl(44, 85%, 66%),
+            hsl(89, 85%, 66%),
+            hsl(134, 85%, 66%),
+            hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+}
+
+
+
 
 
 
